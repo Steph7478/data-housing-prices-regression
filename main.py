@@ -49,7 +49,7 @@ plt.plot([y.min(), y.max()], [y.min(), y.max()], color='red')
 plt.show()
 
 # com esse metodo consigo prever o valor medio do imovel em base aos dados de entrada
-imovel = [X.mean().tolist()]
+imovel = pd.DataFrame([X.mean()])
 
 # e aqui eu finalmente tenho o preco previsto
 preco_previsto = model.predict(imovel)
